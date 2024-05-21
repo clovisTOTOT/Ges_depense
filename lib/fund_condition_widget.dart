@@ -35,7 +35,7 @@ class FundCondition extends StatelessWidget {
           SizedBox(
             height: 25,
             width: 25,
-            child: Image.asset("images/$icon.png"),
+            // child: Image.asset("images/$icon.png"),
           ),
           const SizedBox(width: 12.4),
           Column(
@@ -53,7 +53,7 @@ class FundCondition extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(left: 0.4),
                 child: Text(
-                  "\$$amount",
+                  "$amount F" ,
                   style: const TextStyle(
                     fontSize: 20,
                     fontWeight: FontWeight.bold,

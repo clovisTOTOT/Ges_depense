@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                   child: AlertDialog(
                     title: const Padding(
                       padding: EdgeInsets.only(left: 1.6),
-                      child: Text("ADD TRANSICTION"),
+                      child: Text("ADD TRANSACTION"),
                     ),
                     actions: [
                       TextButton(
@@ -99,7 +99,7 @@ class _HomePageState extends State<HomePage> {
                           TextField(
                             controller: itemController,
                             decoration: const InputDecoration(
-                              hintText: "Enter the Item",
+                              hintText: "Entre votre nom  ",
                               hintStyle: TextStyle(
                                 color: Colors.blueGrey,
                               ),
@@ -111,7 +111,7 @@ class _HomePageState extends State<HomePage> {
                             controller: amountController,
                             keyboardType: TextInputType.number,
                             decoration: const InputDecoration(
-                              hintText: "Enter the Amount",
+                              hintText: "Entre le montant",
                               hintStyle: TextStyle(
                                 color: Colors.blueGrey,
                               ),
@@ -168,7 +168,7 @@ class _HomePageState extends State<HomePage> {
                             child: const Padding(
                               padding: EdgeInsets.only(left: 12),
                               child: Text(
-                                "Expense",
+                                "depot",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w600,
                                   fontSize: 15.4,
@@ -178,7 +178,7 @@ class _HomePageState extends State<HomePage> {
                           ),
                           RadioMenuButton(
                             style: ButtonStyle(
-                              iconSize: MaterialStateProperty.all(20),
+                              iconSize: WidgetStateProperty.all(20),
                             ),
                             value: options[1],
                             groupValue: currentOption,
@@ -188,7 +188,7 @@ class _HomePageState extends State<HomePage> {
                             child: const Padding(
                               padding: EdgeInsets.only(left: 12),
                               child: Text(
-                                "Income",
+                                "depense",
                                 style: TextStyle(
                                   fontWeight: FontWeight.w600,
                                   fontSize: 15.4,
@@ -208,7 +208,7 @@ class _HomePageState extends State<HomePage> {
         ),
       ),
       appBar: AppBar(
-        title: const Text("Expense Tracker"),
+        title: const Text("Planifier Depense"),
         centerTitle: true,
         backgroundColor: Colors.red.shade500,
         elevation: 0,
@@ -224,7 +224,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 8),
                   child: FundCondition(
-                    type: "DEPOSIT",
+                    type: "DEPOT",
                     amount: "$totalMoney",
                     icon: "blue",
                   ),
@@ -232,7 +232,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 5),
                   child: FundCondition(
-                    type: "EXPENSE",
+                    type: "DEPENSE",
                     amount: "$spentMoney",
                     icon: "orange",
                   ),
@@ -240,7 +240,7 @@ class _HomePageState extends State<HomePage> {
                 Padding(
                   padding: const EdgeInsets.only(left: 5, right: 8),
                   child: FundCondition(
-                    type: "INCOME",
+                    type: "TOTAL",
                     amount: "$income",
                     icon: "grey",
                   ),
