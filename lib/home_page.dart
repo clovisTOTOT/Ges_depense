@@ -41,7 +41,7 @@ class _HomePageState extends State<HomePage> {
                   child: AlertDialog(
                     title: const Padding(
                       padding: EdgeInsets.only(left: 1.6),
-                      child: Text("ADD TRANSACTION"),
+                      child: Text("ADD TRANSACTION."),
                     ),
                     actions: [
                       TextButton(
